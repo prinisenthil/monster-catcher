@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqcqsnihof3dk"]
+
+[ext_resource type="Script" path="res://scripts/attack_menu_button.gd" id="1_ml0qx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlc1l"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rx1s8"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="AttackMenuButton" type="Button"]
+custom_minimum_size = Vector2(110, 40)
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_wlc1l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rx1s8")
+script = ExtResource("1_ml0qx")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 110.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 12
+text = "WATER WHIP"
+horizontal_alignment = 1
+vertical_alignment = 1

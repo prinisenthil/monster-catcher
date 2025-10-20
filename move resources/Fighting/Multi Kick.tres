@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PokemonMove" load_steps=2 format=3 uid="uid://5axrceiww56b"]
+
+[ext_resource type="Script" path="res://scripts/pokemon_move.gd" id="1_ylowo"]
+
+[resource]
+script = ExtResource("1_ylowo")
+name = "Multi Kick"
+type = "Normal"
+category = "Physical"
+power = 44
+accuracy = 100
+max_pp = 35
+priority = 0
+critical_rate = 1.0
+effect_chance = 0.0
+effect = ""
+description = ""

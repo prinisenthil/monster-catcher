@@ -1,0 +1,86 @@
+[gd_scene load_steps=12 format=3 uid="uid://miqcfqh4ymgx"]
+
+[ext_resource type="Script" path="res://scripts/pokemon_menu_button.gd" id="1_lbavl"]
+[ext_resource type="Texture2D" uid="uid://uks0ye4d0475" path="res://art/party backgrounds/hover_background.png" id="1_lm0uk"]
+[ext_resource type="Texture2D" uid="uid://bp8a7j8uxkcwd" path="res://art/party backgrounds/background.PNG" id="2_6vqb0"]
+[ext_resource type="Texture2D" uid="uid://t1t5r5shalvw" path="res://art/pokemon sprites/menu sprites/menusprite1.png" id="4_5foqn"]
+[ext_resource type="FontFile" uid="uid://12hc8vr1yhvq" path="res://art/battle ui/silver font.ttf" id="5_lfq6q"]
+[ext_resource type="FontFile" uid="uid://b5rp6axtdna3l" path="res://art/battle ui/NintendBoldRM8E.ttf" id="5_tttdk"]
+[ext_resource type="FontFile" uid="uid://dk4gciy4ntes" path="res://art/fonts/font1.otf" id="6_rymjx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n828s"]
+texture = ExtResource("1_lm0uk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o4ggn"]
+texture = ExtResource("2_6vqb0")
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ysona"]
+color = Color(0, 0.054902, 0, 0)
+thickness = 11
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_001xh"]
+color = Color(0, 0.705882, 0, 1)
+thickness = 11
+
+[node name="PokemonMenuButton" type="Button"]
+custom_minimum_size = Vector2(310, 100)
+offset_right = 96.0
+offset_bottom = 30.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_n828s")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_o4ggn")
+theme_override_styles/normal = SubResource("StyleBoxTexture_o4ggn")
+script = ExtResource("1_lbavl")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(18, 15)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_5foqn")
+centered = false
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 10.0
+offset_right = 189.0
+offset_bottom = 50.0
+theme_override_fonts/font = ExtResource("5_lfq6q")
+theme_override_font_sizes/font_size = 35
+text = "CHARMANDER"
+vertical_alignment = 1
+
+[node name="Lvl" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 63.0
+offset_right = 59.0
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("6_rymjx")
+text = "Lv. 4"
+
+[node name="HP" type="Label" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 44.0
+offset_right = 118.0
+offset_bottom = 67.0
+theme_override_fonts/font = ExtResource("5_tttdk")
+text = "HP"
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 108.0
+offset_top = 47.0
+offset_right = 273.0
+offset_bottom = 58.0
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 47.0
+offset_right = 272.0
+offset_bottom = 58.0
+theme_override_styles/background = SubResource("StyleBoxLine_ysona")
+theme_override_styles/fill = SubResource("StyleBoxLine_001xh")
+value = 50.0
+show_percentage = false

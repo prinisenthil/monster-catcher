@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PokemonMove" load_steps=2 format=3 uid="uid://cxwf0dy4xshnp"]
+
+[ext_resource type="Script" path="res://scripts/pokemon_move.gd" id="1_4nuxr"]
+
+[resource]
+script = ExtResource("1_4nuxr")
+name = "Water Tail"
+type = "Water"
+category = "Physical"
+power = 40
+accuracy = 100
+max_pp = 35
+priority = 0
+critical_rate = 1.0
+effect_chance = 0.0
+effect = ""
+description = ""

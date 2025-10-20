@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="PokemonResource" load_steps=8 format=3 uid="uid://dc1pbfvl05trj"]
+
+[ext_resource type="Texture2D" uid="uid://d0tl42sm6k5jl" path="res://art/pokemon sprites/back facing/gaffy back.PNG" id="1_dfgx7"]
+[ext_resource type="Texture2D" uid="uid://d03chuubjp8ft" path="res://art/pokemon sprites/front facing/gaffy front.PNG" id="2_6wd4g"]
+[ext_resource type="Script" path="res://scripts/pokemon_move.gd" id="3_1nlne"]
+[ext_resource type="Texture2D" uid="uid://t1t5r5shalvw" path="res://art/pokemon sprites/menu sprites/menusprite1.png" id="3_faoa2"]
+[ext_resource type="Resource" uid="uid://bivo5bhnfy7ge" path="res://move resources/Normal/Scratch.tres" id="4_ghoo6"]
+[ext_resource type="Resource" uid="uid://baii7qrjf3rmg" path="res://move resources/Grass/Grass Whip.tres" id="5_eogja"]
+[ext_resource type="Script" path="res://scripts/pokemon_resource.gd" id="6_dx2o7"]
+
+[resource]
+script = ExtResource("6_dx2o7")
+name = "GAFFY"
+element = "Grass"
+base_health = 11
+base_attack = 10
+base_defense = 10
+base_sp_attack = 10
+base_sp_defense = 10
+base_exp = 64
+speed = 100
+accuracy = 100
+level = 5
+captured = false
+seen = false
+moves = Array[ExtResource("3_1nlne")]([ExtResource("4_ghoo6"), ExtResource("5_eogja")])
+front_sprite = ExtResource("2_6wd4g")
+back_sprite = ExtResource("1_dfgx7")
+menu_sprite = ExtResource("3_faoa2")

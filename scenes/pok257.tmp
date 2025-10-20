@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5k0imw5nw7w0"]
+
+[ext_resource type="Script" path="res://scripts/pokecenter_door.gd" id="1_h8smj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_531ho"]
+size = Vector2(26, 8)
+
+[node name="PokecenterDoor" type="Area2D"]
+script = ExtResource("1_h8smj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_531ho")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

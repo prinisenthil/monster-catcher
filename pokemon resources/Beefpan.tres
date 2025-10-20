@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="PokemonResource" load_steps=8 format=3 uid="uid://c7mcqj3iwvkhd"]
+
+[ext_resource type="Texture2D" uid="uid://ddcmgxogfkuey" path="res://art/pokemon sprites/back facing/beefpan back.PNG" id="1_1v2br"]
+[ext_resource type="Script" path="res://scripts/pokemon_move.gd" id="1_2koku"]
+[ext_resource type="Texture2D" uid="uid://ds8sd0weh3pj0" path="res://art/pokemon sprites/front facing/beefpan front.PNG" id="2_dllq1"]
+[ext_resource type="Script" path="res://scripts/pokemon_resource.gd" id="2_tmay0"]
+[ext_resource type="Texture2D" uid="uid://bkms3nvb0rv7i" path="res://art/pokemon sprites/menu sprites/menusprite4.png" id="3_byvb8"]
+[ext_resource type="Resource" uid="uid://d0i2d8h64o5ds" path="res://move resources/Normal/Fling.tres" id="4_8qth0"]
+[ext_resource type="Resource" uid="uid://5axrceiww56b" path="res://move resources/Fighting/Multi Kick.tres" id="5_twe1y"]
+
+[resource]
+script = ExtResource("2_tmay0")
+name = "BEEFPAN"
+element = "Normal"
+base_health = 11
+base_attack = 10
+base_defense = 10
+base_sp_attack = 10
+base_sp_defense = 10
+base_exp = 64
+speed = 100
+accuracy = 100
+level = 5
+captured = false
+seen = false
+moves = Array[ExtResource("1_2koku")]([ExtResource("4_8qth0"), ExtResource("5_twe1y")])
+front_sprite = ExtResource("2_dllq1")
+back_sprite = ExtResource("1_1v2br")
+menu_sprite = ExtResource("3_byvb8")

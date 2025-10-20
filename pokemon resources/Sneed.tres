@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="PokemonResource" load_steps=8 format=3 uid="uid://r1ir2asxw5wl"]
+
+[ext_resource type="Texture2D" uid="uid://culvtclxmuki4" path="res://art/pokemon sprites/back facing/sneed back.PNG" id="1_hd7xr"]
+[ext_resource type="Texture2D" uid="uid://51v4up1woabu" path="res://art/pokemon sprites/front facing/sneed front.PNG" id="2_d03bg"]
+[ext_resource type="Script" path="res://scripts/pokemon_move.gd" id="3_ikvfa"]
+[ext_resource type="Texture2D" uid="uid://d10bxj24njrg7" path="res://art/pokemon sprites/menu sprites/menusprite15.png" id="3_jw2lh"]
+[ext_resource type="Resource" uid="uid://c0kb5u8qkpgm" path="res://move resources/Grass/Magnolia Pounce.tres" id="4_ukpl1"]
+[ext_resource type="Resource" uid="uid://msch1ac08x1d" path="res://move resources/Air/Fling Seed.tres" id="5_rqnpc"]
+[ext_resource type="Script" path="res://scripts/pokemon_resource.gd" id="6_hdmbq"]
+
+[resource]
+script = ExtResource("6_hdmbq")
+name = "SNEED"
+element = "Grass"
+base_health = 11
+base_attack = 10
+base_defense = 10
+base_sp_attack = 10
+base_sp_defense = 10
+base_exp = 64
+speed = 100
+accuracy = 100
+level = 5
+captured = false
+seen = false
+moves = Array[ExtResource("3_ikvfa")]([ExtResource("4_ukpl1"), ExtResource("5_rqnpc")])
+front_sprite = ExtResource("2_d03bg")
+back_sprite = ExtResource("1_hd7xr")
+menu_sprite = ExtResource("3_jw2lh")

@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://bm5eetld6n8pd"]
+
+[ext_resource type="Script" path="res://scripts/attack_menu.gd" id="1_2lb3q"]
+[ext_resource type="PackedScene" uid="uid://cqcqsnihof3dk" path="res://scenes/ui/attack_menu_button.tscn" id="2_y7q7o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pjsuh"]
+bg_color = Color(0.469648, 0.727765, 0.98378, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.288392, 0.638203, 0.960374, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adfuc"]
+bg_color = Color(0.17049, 0.5626, 0.898664, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.0454578, 0.341383, 0.576112, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = 1.0
+offset_right = -5.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2lb3q")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 25.0
+offset_right = 310.0
+offset_bottom = 109.0
+scale = Vector2(0.6, 0.6)
+columns = 2
+
+[node name="AttackMenuButton" parent="GridContainer" instance=ExtResource("2_y7q7o")]
+layout_mode = 2
+
+[node name="AttackMenuButton2" parent="GridContainer" instance=ExtResource("2_y7q7o")]
+layout_mode = 2
+
+[node name="AttackMenuButton3" parent="GridContainer" instance=ExtResource("2_y7q7o")]
+layout_mode = 2
+
+[node name="AttackMenuButton4" parent="GridContainer" instance=ExtResource("2_y7q7o")]
+layout_mode = 2
+
+[node name="CancelBtn" type="Button" parent="."]
+layout_mode = 1
+offset_left = 163.0
+offset_top = 78.0
+offset_right = 213.0
+offset_bottom = 93.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_pjsuh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_adfuc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_adfuc")
+
+[node name="Label" type="Label" parent="CancelBtn"]
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "cancel"
+horizontal_alignment = 1
+vertical_alignment = 1

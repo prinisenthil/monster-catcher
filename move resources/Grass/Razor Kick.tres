@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PokemonMove" load_steps=2 format=3 uid="uid://bjouyebnw0xno"]
+
+[ext_resource type="Script" path="res://scripts/pokemon_move.gd" id="1_vjcti"]
+
+[resource]
+script = ExtResource("1_vjcti")
+name = "Razor Kick"
+type = "Grass"
+category = "Physical"
+power = 40
+accuracy = 100
+max_pp = 35
+priority = 0
+critical_rate = 1.0
+effect_chance = 0.0
+effect = ""
+description = ""

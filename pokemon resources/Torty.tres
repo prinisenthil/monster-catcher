@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="PokemonResource" load_steps=7 format=3 uid="uid://f2gpmwysq8ht"]
+
+[ext_resource type="Script" path="res://scripts/pokemon_move.gd" id="1_51ex0"]
+[ext_resource type="Texture2D" uid="uid://bruch4cygjs2f" path="res://art/pokemon sprites/back facing/torty back.PNG" id="1_87fxj"]
+[ext_resource type="Texture2D" uid="uid://clm0di3ly5vi8" path="res://art/pokemon sprites/front facing/torty front.PNG" id="2_cg3nq"]
+[ext_resource type="Script" path="res://scripts/pokemon_resource.gd" id="2_vq62v"]
+[ext_resource type="Texture2D" uid="uid://c2t6x85lsnwt8" path="res://art/pokemon sprites/menu sprites/menusprite7.png" id="3_7jilt"]
+[ext_resource type="Resource" uid="uid://w158bq15t6q1" path="res://move resources/Fire/Flame Punch.tres" id="4_8kky3"]
+
+[resource]
+script = ExtResource("2_vq62v")
+name = "TORTY"
+element = "Fire"
+base_health = 11
+base_attack = 10
+base_defense = 10
+base_sp_attack = 10
+base_sp_defense = 10
+base_exp = 64
+speed = 100
+accuracy = 100
+level = 5
+captured = false
+seen = false
+moves = Array[ExtResource("1_51ex0")]([ExtResource("4_8kky3")])
+front_sprite = ExtResource("2_cg3nq")
+back_sprite = ExtResource("1_87fxj")
+menu_sprite = ExtResource("3_7jilt")
