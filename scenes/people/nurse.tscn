@@ -148,13 +148,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c11t3"]
 size = Vector2(20, 50)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3auyy"]
-bg_color = Color(0.191909, 0.243874, 0.285756, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s83bg"]
+bg_color = Color(1, 1, 1, 1)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
 border_width_bottom = 6
-border_color = Color(0, 0, 0, 1)
+border_color = Color(0.243569, 0.243569, 0.243569, 1)
 border_blend = true
 corner_radius_top_left = 6
 corner_radius_top_right = 6
@@ -173,38 +173,33 @@ position = Vector2(0, 17)
 shape = SubResource("RectangleShape2D_c11t3")
 
 [node name="UI" type="Control" parent="."]
-z_index = 5
 layout_mode = 3
 anchors_preset = 0
-offset_left = 19.0
-offset_top = 73.0
-offset_right = 59.0
-offset_bottom = 113.0
-metadata/_edit_use_anchors_ = true
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Textbox" type="Panel" parent="UI"]
-modulate = Color(1, 1, 1, 0.658824)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 5.375
-anchor_top = 13.275
-anchor_right = 5.375
-anchor_bottom = 13.275
-offset_left = -334.0
-offset_top = -546.0
-offset_right = -134.0
-offset_bottom = -499.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_3auyy")
+z_index = 1
+offset_left = -120.0
+offset_top = 57.0
+offset_right = 121.0
+offset_bottom = 110.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s83bg")
 
-[node name="Dialogue" type="Label" parent="UI/Textbox"]
-custom_minimum_size = Vector2(190, 0)
+[node name="Label" type="Label" parent="UI/Textbox"]
 layout_mode = 1
-offset_left = 4.99998
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
 offset_top = 3.0
-offset_right = 195.0
-offset_bottom = 44.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+offset_right = -6.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.219501, 0.219501, 0.219501, 1)
 theme_override_fonts/font = ExtResource("3_iopm7")
+theme_override_font_sizes/font_size = 15
 text = "Hello from the editor!"
 autowrap_mode = 3
 script = ExtResource("4_hmybc")

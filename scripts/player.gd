@@ -181,13 +181,6 @@ func move_one_tile() -> void:
 		if collider is Area2D:
 			print("Ray hit Area2D: ", collider.name)
 
-			# Optional: trigger Area2D logic
-			#if collider.is_in_group("door"):
-				# Example: auto-walk through the door or trigger a scene change
-				#print("This is a door area. Allowing walk-through.")
-
-			# Do NOT return — allow movement to continue
-
 		else:
 			# If it's not an Area2D (e.g., a solid object), block movement
 			return
