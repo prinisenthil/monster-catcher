@@ -148,7 +148,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c11t3"]
 size = Vector2(20, 50)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3auyy"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s83bg"]
 bg_color = Color(0.191909, 0.243874, 0.285756, 1)
 border_width_left = 6
 border_width_top = 6
@@ -184,27 +184,26 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Textbox" type="Panel" parent="UI"]
 modulate = Color(1, 1, 1, 0.658824)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 5.375
-anchor_top = 13.275
-anchor_right = 5.375
-anchor_bottom = 13.275
-offset_left = -334.0
-offset_top = -546.0
-offset_right = -134.0
-offset_bottom = -499.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_3auyy")
+offset_left = 215.0
+offset_top = 531.0
+offset_right = 722.0
+offset_bottom = 643.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s83bg")
 
-[node name="Dialogue" type="Label" parent="UI/Textbox"]
-custom_minimum_size = Vector2(190, 0)
+[node name="Label" type="Label" parent="UI/Textbox"]
 layout_mode = 1
-offset_left = 4.99998
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
 offset_top = 3.0
-offset_right = 195.0
-offset_bottom = 44.0
+offset_right = -5.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_iopm7")
+theme_override_font_sizes/font_size = 50
 text = "Hello from the editor!"
 autowrap_mode = 3
 script = ExtResource("4_hmybc")
